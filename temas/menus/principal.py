@@ -4,7 +4,8 @@ from temas.listas.ejercicio_3 import ejercicio_3
 import temas.condicionales.ejercicio_4 as fd
 from temas.ciclos.ejercicio_5 import ejercicio_5
 import temas.graficas.ejercicio_6 as fc
-
+from poo.clases.ejercicio1_poo import Ejercicio1
+from poo.clases.ejercicio2_poo import Ejercicio2
 
 def menu_principal():
     while True:
@@ -20,9 +21,19 @@ def menu_principal():
         op = int(input("Elija opción: "))
         match(op):
             case 1:
-                ejercicio_1()
+                #ejercicio_1()
+                test= Ejercicio1()
+                test.leerDatos()
+                test.realizarCalculo()
+                test.mostrarResultado()
+                
             case 2:
-                fn.ejercicio_2()
+                #fn.ejercicio_2()
+                test= Ejercicio2()
+                test.leerDatos()
+                test.realizarCalculo()
+                test.mostrarResultado()
+
             case 3:
                 ejercicio_3()
             case 4:
